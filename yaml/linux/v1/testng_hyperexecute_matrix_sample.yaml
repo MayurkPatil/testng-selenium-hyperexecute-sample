@@ -7,13 +7,12 @@ matrix:
   browser: ["Chrome"]
   version: ["127"]
   os: ["linux"]
-  selenium_version: ["4.23.0"]
 
 pre:
   - mvn dependency:resolve
 
 testSuites:
-  - mvn test -Dplatname=linux -Dmaven.repo.local=m2_cache_dir -DselectedTests=$tests -Dselenium_version=4.23.0
+  - mvn test -Dplatname=linux -Dmaven.repo.local=m2_cache_dir -DselectedTests=$tests
 
 parallelism: 1
 
