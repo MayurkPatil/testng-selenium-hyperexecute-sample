@@ -20,3 +20,4 @@ retryOnFailure: true
 maxRetries: 1
 
 jobLabel: [selenium-testng, linux, matrix]
+report: true
