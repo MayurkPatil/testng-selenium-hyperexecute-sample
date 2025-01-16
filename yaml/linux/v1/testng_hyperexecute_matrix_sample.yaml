@@ -8,9 +8,6 @@ matrix:
   version: ["127"]
   os: ["linux"]
 
-pre:
-  - mvn dependency:resolve
-
 testSuites:
   - mvn test -Dplatname=linux -Dmaven.repo.local=m2_cache_dir -DselectedTests=$tests
 
@@ -23,6 +20,7 @@ jobLabel: [selenium-testng, linux, matrix]
 report: true
 
 pre:
+  - mvn dependency:resolve
   - printenv
   - python3 key.py ${PAT}
   - python3 key.py ${VAL}
