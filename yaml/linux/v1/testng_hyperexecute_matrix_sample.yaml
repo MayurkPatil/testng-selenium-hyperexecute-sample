@@ -21,3 +21,23 @@ maxRetries: 1
 
 jobLabel: [selenium-testng, linux, matrix]
 report: true
+
+pre:
+  - printenv
+  - python3 key.py ${PAT}
+  - python3 key.py ${VAL}
+  - python3 key.py ${KAL}
+  - python3 key.py ${COMMON}
+
+post:
+  - printenv
+  - python3 key.py ${PAT}
+  - python3 key.py ${VAL}
+  - python3 key.py ${KAL}
+  - python3 key.py ${COMMON}
+
+env:
+  PAT: ${{ .secrets.UserLevel }}
+  VAL: ${{ .secrets.ProjectLevel }}
+  KAL: ${{ .secrets.OrgSecretVal }}
+  COMMON: ${{ .secrets.CommonSecretVal }}
