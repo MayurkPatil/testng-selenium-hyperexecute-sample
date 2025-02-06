@@ -11,7 +11,7 @@ pre:
   - mvn dependency:resolve
 
 testSuites:
-  - mvn test -Dplatname=mac -Dmaven.repo.local=m2_cache_dir -DselectedTests=$tests
+  - mvn test -Dplatname=${matrix.os} -Dmaven.repo.local=m2_cache_dir -DselectedTests=$tests
 
 parallelism: 1
 
