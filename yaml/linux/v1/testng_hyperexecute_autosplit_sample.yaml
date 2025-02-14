@@ -15,6 +15,7 @@ testDiscovery:
 
 testRunnerCommand: mvn test -Dplatname=linux -Dmaven.repo.local=./.m2 dependency:resolve -DselectedTests=$test
 
+report: true
 retryOnFailure: true
 maxRetries: 1
 
