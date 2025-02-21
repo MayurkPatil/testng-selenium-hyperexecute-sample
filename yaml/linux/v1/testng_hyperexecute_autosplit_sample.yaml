@@ -13,6 +13,7 @@ pre:
   - echo ${test}
   - echo ${karma}
   - echo ${kajdj}
+  - echo ${dollar}
 
 testDiscovery:
   type: raw
@@ -34,4 +35,5 @@ vars:
  testPath: ${test}\\bin\\build\\${framework}\\${runtime}
  mynumber: 12
  karma: "444"
- kajdj: 'ffff'
+ kajdj: ['ffff', 'dddd']
+ dollar: {"ddd":'122', "ddd2":'2222', "ddd3": [2222,111]}
