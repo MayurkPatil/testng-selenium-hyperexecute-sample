@@ -14,6 +14,9 @@ pre:
   - echo ${karma}
   - echo ${kajdj}
   - echo ${dollar}
+  - echo ${kaja}
+  - echo ${test1}
+  - echo ${test2}
 
 testDiscovery:
   type: raw
@@ -37,3 +40,6 @@ vars:
  karma: "444"
  kajdj: ['ffff', 'dddd']
  dollar: {"ddd":'122', "ddd2":'2222', "ddd3": [2222,111]}
+ kaja: ${test1}
+ test1: ${test2}
+ test2: ${kaja}
