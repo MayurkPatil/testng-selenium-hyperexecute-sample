@@ -42,4 +42,4 @@ vars:
  dollar: {"ddd":'122', "ddd2":'2222', "ddd3": [2222,111]}
  kaja: ${test1}
  test1: ${test2}
- test2: ${kaja}
+ test2: "fff"
