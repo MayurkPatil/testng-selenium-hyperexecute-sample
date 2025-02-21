@@ -11,6 +11,7 @@ pre:
   - echo ${testPath}
   - echo ${mynumber}
   - echo ${test}
+  - echo ${karma}
 
 testDiscovery:
   type: raw
@@ -31,4 +32,4 @@ vars:
  runtime: win-x64
  testPath: ${test}\bin\build\${framework}\${runtime}
  mynumber: 12
- test: "444"
+ karma: "444"
