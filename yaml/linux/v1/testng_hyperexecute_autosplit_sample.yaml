@@ -12,6 +12,7 @@ pre:
   - echo ${mynumber}
   - echo ${test}
   - echo ${karma}
+  - echo ${kajdj}
 
 testDiscovery:
   type: raw
@@ -33,3 +34,4 @@ vars:
  testPath: ${test}\\bin\\build\\${framework}\\${runtime}
  mynumber: 12
  karma: "444"
+ kajdj: 'ffff'
