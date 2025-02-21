@@ -30,6 +30,6 @@ vars:
  test: e2e
  framework: net5.0
  runtime: win-x64
- testPath: ${test}\bin\build\${framework}\${runtime}
+ testPath: ${test}\\bin\\build\\${framework}\\${runtime}
  mynumber: 12
  karma: "444"
