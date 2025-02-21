@@ -7,6 +7,10 @@ concurrency: 4
 
 pre:
   - mvn dependency:resolve
+  - echo ${framework}
+  - echo ${testPath}
+  - echo ${mynumber}
+  - echo ${test}
 
 testDiscovery:
   type: raw
@@ -20,3 +24,11 @@ retryOnFailure: true
 maxRetries: 1
 
 jobLabel: [selenium-testng, linux, v1, autosplit]
+
+vars:
+ test: e2e
+ framework: net5.0
+ runtime: win-x64
+ testPath: ${test}\bin\build\${framework}\${runtime}
+ mynumber: 12
+ test: "444"
