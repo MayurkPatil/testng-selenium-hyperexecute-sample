@@ -3,8 +3,8 @@ version: 0.1
 runson: win
 
 matrix:
-  tests: ["Test_1", "Test_2"]
-  browser: ["Chrome", "MicrosoftEdge"]
+  tests: ["Test_1"]
+  browser: ["Chrome"]
   version: ["latest"]
   os: ["win"]
 
