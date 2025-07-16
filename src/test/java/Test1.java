@@ -49,7 +49,7 @@ public class Test1
         capabilities.setCapability("network",true);
         capabilities.setCapability("console",true);
         capabilities.setCapability("visual",true);
-        capabilities.setCapability("selenium_version", "4.24.0");
+        // capabilities.setCapability("selenium_version", "4.24.0");
         
 
         capabilities.setCapability("accessibility", true); // Enable accessibility testing
