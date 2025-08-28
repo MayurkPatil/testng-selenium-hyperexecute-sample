@@ -7,6 +7,7 @@ concurrency: 2
 
 pre:
   - echo ${env-var-value}
+  - echo ${username-var-value}
   - mvn dependency:resolve
 
 testDiscovery:
@@ -23,3 +24,5 @@ jobLabel: [selenium-testng, win, v1, autosplit]
 
 vars:
   env-var-value: ${env-var}
+  username-var-value: ${username-var}
+  db-var-value: ${db-var}
