@@ -8,6 +8,7 @@ concurrency: 2
 pre:
   - echo ${env-var-value}
   - echo ${username-var-value}
+  - echo ${key-var-value}
   - mvn dependency:resolve
 
 testDiscovery:
@@ -26,3 +27,4 @@ vars:
   env-var-value: ${env-var}
   username-var-value: ${username-var}
   db-var-value: ${db-var}
+  key-var-value: ${key-var}
