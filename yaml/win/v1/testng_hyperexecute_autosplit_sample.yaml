@@ -20,3 +20,6 @@ retryOnFailure: true
 maxRetries: 1
 
 jobLabel: [selenium-testng, win, v1, autosplit]
+
+vars:
+  env-var: ${env-var}
