@@ -9,6 +9,8 @@ pre:
   - echo ${env-var-value}
   - echo ${username-var-value}
   - echo ${key-var-value}
+  - echo ${name-var1}
+  - echo ${name-var2}
   - mvn dependency:resolve
 
 testDiscovery:
@@ -28,3 +30,5 @@ vars:
   username-var-value: ${username-var}
   db-var-value: ${db-var}
   key-var-value: ${key-var}
+  name-var1: ${Mayur}
+  name-var2: ${mayur}
