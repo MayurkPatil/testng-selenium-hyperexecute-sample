@@ -6,6 +6,7 @@ autosplit: true
 concurrency: 4
 
 pre:
+  - echo ${env-var}
   - mvn dependency:resolve
 
 testDiscovery:
