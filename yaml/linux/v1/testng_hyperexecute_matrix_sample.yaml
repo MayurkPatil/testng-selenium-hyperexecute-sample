@@ -8,21 +8,23 @@ matrix:
   version: ["latest"]
   os: ["linux"]
 
-runtime:
-  language: java
-  version: 11
-
-cacheKey: '{{ checksum "pom.xml" }}'
-cacheDirectories:
-  - .m2
-
 pre:
-  - mvn -Dmaven.repo.local=./.m2 dependency:resolve
+  - echo ${abc}
+  - echo ${mygate}
+  - mvn dependency:resolve
 
 testSuites:
-  - mvn test -Dplatname=linux -Dmaven.repo.local=./.m2 -DselectedTests=$tests
+  - mvn test -Dplatname=linux -Dmaven.repo.local=m2_cache_dir -DselectedTests=$tests
 
 parallelism: 1
+report: true
+partialReports:
+  location: target/
+  type: html
+  frameworkName: extent
+  email:
+    to: 
+      - ${email}
 
 retryOnFailure: true
 maxRetries: 1
