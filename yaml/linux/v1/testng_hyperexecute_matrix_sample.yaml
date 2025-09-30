@@ -9,8 +9,6 @@ matrix:
   os: ["linux"]
 
 pre:
-  - echo ${abc}
-  - echo ${mygate}
   - mvn dependency:resolve
 
 testSuites:
